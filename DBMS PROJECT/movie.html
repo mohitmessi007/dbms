@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		CINEMA HOST
+	</title>
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+	<style>
+		
+#contanier {
+	position: fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+	width: 60%;
+	background-color: #404345;
+	height: 150px;
+	border-left:5px solid black;
+	border-right:5px solid black;
+	border-bottom: 5px solid black;
+}
+
+#in7 {
+	width: 60%;
+	height: 55px;
+	background-color: #383836;
+	margin-bottom: 10px;
+	border-bottom: 2px solid black;
+}
+body {
+	background-color: #bbbcbd;
+	background: url(img7.jpg) no-repeat center fixed; 
+	background-size: 100% 100%;
+}
+
+#inner1 {
+
+	position:relative;
+    padding:0;
+    margin-top: 20px;
+    top:0;
+    left:0;
+	background-color: #383836;
+	border-radius: 10px;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	height: 120px;
+}
+
+#inner1 h1 {
+	color: #f5f514;
+	font-family: Tangerine;
+
+}
+
+#inner2 img {
+	margin-top: -32px;
+
+}
+
+#inner3 {
+	float: left;
+}
+
+#inner4 {
+	color: yellow;
+	margin-left: 870px; 
+	font-size: 20px;
+}
+
+
+#cont2 {
+	width: 60.5%;
+	background-color: black;
+	height: 42px;
+	margin-left: 391.5px;
+	margin-top: 151px;
+	border: 1px solid black;
+	
+}
+
+.cont3 {
+	width: 39.7%;
+	background-color: #404345;
+	height: 390px;
+	margin-left: 392px;
+	margin-top: 4px;
+	border: 5px solid black;
+	float: left;
+}
+
+
+.cont3 img {
+   margin-top: 10px;
+   margin-left: 20px;
+   width: 220px;
+}
+
+#in1 img {
+	margin-top: 5px;
+   margin-left: 20px;
+   width: 220px;
+}
+
+#in3 img {
+	margin-top: 5px;
+   margin-left: 20px;
+   width: 220px;
+}
+
+.cont3 a {
+	color: yellow;
+	margin-left: 20px;
+	font-size: 25px;
+}
+
+#in5 img {
+	margin-top: 5px;
+   margin-left: 20px;
+   width: 335px;
+}
+
+.cont3 a i {
+	text-decoration: underline;
+}
+
+* {
+	box-sizing: border-box;
+}
+#cont4 {
+	float: right;
+    width: 20.4%;
+	background-color: white;
+	height: 390px;
+	margin-top: 4px;
+	margin-left: 2px;
+	float: left;
+}
+
+#in3 {
+	height: 330px;
+	background-color: #383836;
+}
+
+#in4 {
+	height: 330px;
+}
+
+#in4 img {
+	margin: 20px;
+	height: 290px;
+	width: 340px;
+}
+
+#in6 img {
+	margin-top: 5px;
+	margin-left: 20px;
+	height: 270px;
+	width: 300px;
+}
+
+.cont6 {
+	width: 20.4%;
+	background-color: white;
+	height: 430px;
+	margin-top: 4px;
+	margin-left: 2px;
+	
+	float: left;
+}
+
+.cont5 {
+	width: 39.5%;
+	background-color: white;
+	height: 430px;
+	margin-left: 395px;
+	margin-top: 4px;
+	float: left;
+	
+}
+
+#cont4 li {
+   margin-left: 10px;
+   margin-top: 10px;
+   color: blue;
+   list-style-type: none;
+   font-size: 22px;
+}
+
+.cont6 li {
+	margin-left: 10px;
+   margin-top: 10px;
+   color: blue;
+   list-style-type: none;
+   font-size: 22px;
+}
+
+#inner2 {
+    position: relative;
+	width: 20%;
+	height: 85%;
+	background-color: yellow;
+    padding: 2px;
+    font-weight: 100px;
+    border-radius: 10px;
+    margin-top: 8px;
+    margin-left: 5px;
+    float: left;
+}
+
+#navigation ul {
+	position:fixed;
+	background-color:black;
+	list-style-type:none;
+	overflow:hidden;
+	padding:0;
+	width:60%;
+	margin:0;
+}
+
+.cont5 #img5 {
+  margin-left: 30px;
+  width: 500px;
+  height: 260px;
+  padding: 0;
+}
+
+.cont5 #img6 {
+  margin-left: 20px;
+  height: 260px;
+  padding: 0;
+}
+
+#cont4 img {
+	height: 50px;
+	width: 50px;
+	margin-left: 10px;
+	float: left;
+}
+
+.cont6 img {
+	height: 50px;
+	width: 50px;
+	margin-left: 10px;
+	float: left;
+}
+
+#in2 img {
+    height: 300px;
+    width: 350px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#navigation li {
+	color:white;
+	display:block;
+	float:left;
+	border-right:1px solid grey;
+	padding:10px 20px;
+	text-transform: uppercase;
+    text-align:center;
+    font-size: 19px;
+}
+#navigation li:hover {
+	background-color: green;
+	color:white;
+}
+
+	</style>
+
+
+</head>
+<body>
+  
+  <div id="contanier" style="margin-left:400px">
+  	<div id="inner1" style="margin-left:5px; margin-right:5px">
+       <div id="inner2">
+          <img src="logo.png" width="220px" height="200px">
+       </div>
+       <div id="inner3">
+          <img src="star1.png" width="120px" height="110px">
+          <img src="star1.png" width="120px" height="110px">
+          <img src="star1.png" width="120px" height="110px">
+          <img src="star1.png" width="120px" height="110px">
+          <img src="star1.png" width="120px" height="110px">
+        </div>
+        <div id="inner4">
+        	<p>An official alumini to know about movies,actors,plays surrounding you.Gather Rating and information at your finger.</p>
+        </div>
+    </div>
+   </div>
+
+
+   <div id="cont2">
+   	   <div id="navigation">
+          <ul>
+            <li>Home</a></li>
+            <li>Notes</li>
+            <li>Activites</li>
+            <li>Syllabus</li>
+            <li>Timetable</li>
+            <li>Notice</li>
+            <li>MSRIT WEBSITE</li>
+            <li>Students Update</li>
+          </ul>
+       </div>
+   </div>
+
+   <div class="cont3">
+     <img src="img1.jpg">
+     <img src="img2.jpg">
+     <img src="img3.jpg">
+
+     <a>
+     	<i>Browse more trailer</i>&ensp; >>>
+     </a>
+   	</div>
+
+   <div id="cont4">
+     <li style="color:red">Upcoming Movies This Week</li> 
+     <p>
+     <img src="img4.png">
+     <li style="margin-top:30px">&ensp;The Accountant</li>
+     </p>  
+     <p>
+     <img src="img4.png">
+     <li style="margin-top:30px">&ensp;Kevin Hart: What Now?</li>
+     </p> 
+     <p>
+     <img src="img4.png">
+     <li style="margin-top:30px">&ensp;Max Steel</li>
+     </p> 
+     <p>
+     <img src="img4.png">
+     <li style="margin-top:30px">&ensp;Desierto</li>
+     </p> 	
+     <p>
+     <img src="img4.png">
+     <li style="margin-top:30px">&ensp;Certain Women</li>
+     </p> 
+     <p>
+     <img src="img4.png">
+     <li style="margin-top:30px">&ensp;Miss Hokusai</li>
+     </p> 
+   </div>
+
+   <div class="cont5">
+   	 <p style="font-size:25px">
+   	 	&ensp;&ensp;"Legends of Tomorrow" Showrunner Talks Season 2
+   	 </p>
+   	 <p style="color:blue">
+   	 	&emsp;&ensp;"Legends of Tomorrow" executive producer Marc Guggenheim tells IMDb why Season 2 will be bigger and <br>&emsp;&ensp; better thanks to the arrival of the Legion of Doom.
+   	 </p>
+   	 <img src="img5.jpg" id="img5">
+   	 <img src="img6.jpg" id="img6">
+   	 <span style="color:blue;margin-left:20px;"><i>Learn about "Legends of Tomorrow" Season 2 >>></i></span>
+   </div>
+
+   <div class="cont6">
+   	 <li style="color:red">NOW PLAYING (BOX OFFICE)</li> 
+     <p>
+     <img src="img4.png">
+     <li style="margin-top:30px">&ensp;The Girl on the Train</li>
+     </p>  
+     <p>
+     <img src="img4.png">
+     <li style="margin-top:20px">&ensp;Miss Peregrine's Home for<br>&ensp;Peculiar Children</li>
+     </p> 
+     <p>
+     <img src="img4.png">
+     <li style="margin-top:30px">&ensp;Deepwater Horizon</li>
+     </p> 
+     <p>
+     <img src="img4.png">
+     <li style="margin-top:30px">&ensp;Storks</li>
+     </p> 	
+     <p>
+     <img src="img4.png">
+     <li style="margin-top:30px">&ensp;The Magnificent Seven</li>
+     </p> 
+     <p>
+     <img src="img4.png">
+     <li style="margin-top:30px">&ensp;Priceless</li>
+     </p> 
+   </div>
+
+   <div class="cont3" style="height:430px">
+          	<p style="font-size:25px;color:white;">
+   	 	&ensp;&ensp;Director Spotlight: Rakesh Omprakash Mehra
+   	 </p>
+   	  	<img src="img8.jpg">
+        <img src="img9.jpg">
+        <img src="img10.jpg">
+        <p style="font-size:18px;color:gold;">
+          	&ensp;&emsp;Rakesh Omprakash Mehra's latest film Mirzya hits theaters this Friday. Take a<br>&ensp;&emsp;closer look at this director's work through the years.<br><br>
+          	&ensp;&emsp;See the full list >>>
+          </p>
+   </div>
+          
+
+   <div class="cont6">
+   	   <li style="color:red">COMING SOON</li> 
+     <p>
+     <img src="img4.png">
+     <li style="margin-top:30px">&ensp;Jack Reacher: Never Go Back</li>
+     </p>  
+     <p>
+     <img src="img4.png">
+     <li style="margin-top:30px">&ensp;Ouija: Origin of Evil</li>
+     </p> 
+     <p>
+     <img src="img4.png">
+     <li style="margin-top:30px">&ensp;Keeping Up with the Joneses</li>
+     </p> 
+     <p>
+     <img src="img4.png">
+     <li style="margin-top:30px">&ensp;Boo! A Madea Halloween</li>
+     </p> 	
+     <p>
+     <img src="img4.png">
+     <li style="margin-top:30px">&ensp;American Pastoral</li>
+     </p> 
+     <p>
+     <img src="img4.png">
+     <li style="margin-top:30px">&ensp;Jack Sparrow</li>
+     </p>
+   </div>
+
+   <div class="cont5" id="in1">
+   	   <p style="font-size:25px;">
+   	 	&ensp;&ensp;Fan IQ: Do You Know "The Man in the High Castle"?
+    	</p>
+       <p style="color:blue;font-size:20px;">&ensp;&ensp;Think you know Amazon Studios' "The Man in the High Castle"? Take on this TV<br>&ensp;&ensp; challenge and discovermore quizzes at IMDb's Fall TV Guide.
+       </p>
+      <img src="img11.jpg">
+   	  <img src="img12.jpg">
+   	  <img src="img13.jpg">
+   	  <p style="color:red;font-size:20px;">
+   	  	&ensp;&ensp;Test your knowledge of "The Man in the High Castle"
+   	  </p>
+   </div>
+
+   <div class="cont6" id="in2">
+   	 <li style="color:red">IMDb Picks: October</li>
+   	 <img src="img14.jpg"> 
+   	 <li style="color:blue;list-style-type:none;font-size:15px;">
+   	 	&ensp;&ensp;<br>Of course the return of "The Walking Dead" is on our radar this month. See which other movies and TV shows we're excited about in IMDb Picks.
+   	 </li>
+   </div>
+
+   <div class="cont5" id="in3">
+   	   <p style="font-size:25px;color:white">
+   	 	&ensp;&ensp;IMDb Snapshot
+    	</p>
+      <img src="img15.jpg">
+   	  <img src="img16.jpg">
+   	  <img src="img17.jpg">
+ 
+   </div>
+
+   <div class="cont6" id="in4">
+   	  <img src="img18.jpg">
+   </div>
+
+   <div class="cont5">
+   	   <p style="font-size:25px">
+   	 	&ensp;&ensp;Fall TV Spotlight: "The Big Bang Theory" Season 10
+   	 </p>
+   	 <div id="in5">
+   	 <img src="img19.jpg">
+   	 <img src="img20.jpg">
+   	 </div>
+   	 <p style="font-size:25px;color:blue;">
+   	 	&ensp;&ensp;See "The Big Bang Theory" Season 10 gallery
+   	 </p>
+   </div>
+
+   <div class="cont6">
+   	  <img src="img23.jpg" style="margin-top: 20px;margin-left: 20px;height: 300px;width: 350px;">
+   	  <li style="color:blue;list-style-type:none;font-size:17px;">
+   	 	&ensp;&ensp;<br>Of course the return of "Game Of Thrones" is on our radar this month. See which other movies and TV shows we're excited about in IMDb Picks.
+   	 </li>
+   </div>
+
+   <div class="cont5">
+   	   <p style="font-size:25px">
+   	 	&ensp;&ensp;Indie Focus: Go Dutch With 'The Windmill'
+   	 </p>
+   	   <p style="font-size:18px;color:red;">
+   	 	&ensp;&ensp;The slasher film goes on vacation in this tale of a group of tourists whose visit to one of Holland's<br>&ensp;&ensp;famous windmills goes very, very wrong.
+   	 </p>
+        <div id="in6">
+   	 <img src="img21.jpg">
+   	 <img src="img22.jpg" style="width:350px;">
+   	 </div>
+
+   </div>
+
+   <div class="cont6">
+   	  <img src="img24.jpg" style="margin-top: 20px;margin-left: 20px;height: 300px;width: 350px;">
+   	  <li style="color:blue;list-style-type:none;font-size:17px;">
+   	 	&ensp;&ensp;<br>Of course the return of "Prison Break" is on our radar this month. See which other movies and TV shows we're excited about in IMDb Picks.
+   	 </li>
+   </div>
+   <div class="cont5" id="in7">
+    <li style="color:white;list-style-type:none;font-size:25px;text-align:center;margin-top:10px;">
+   	   @Copywright 2010-2026 CINEMAHOST.com
+   	 </li>
+   </div>
+
+</body>
+</html>
